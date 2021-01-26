@@ -1,0 +1,22 @@
+npx lite-server
+scripting --> web
+
+tag:
+<B>oppening tag
+ </B> closing tag
+
+<BR> singular tag
+
+Element: Tag and what ever in between tag is element
+
+Entity: special charaters printed through & ;
+	&copy;
+
+TCP/IP connection type 
+
+
+I'll give you something to paly with for the weekend. 
+how will you play with it?
+you people you
+
+519-748-5220 ext 3187 
