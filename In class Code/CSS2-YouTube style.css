@@ -1,0 +1,40 @@
+html,body {
+    height:100%;
+}
+
+body{
+    margin:0;
+    font-family:Roboto, sans-serif;
+    color:rgb(77, 74, 74);
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+}
+
+#menu{
+    width:75px;
+    text-align:center;
+}
+
+#search-wrapper{
+    display:flex;
+    justify-content: center;
+    flex:1;
+    
+}
+
+#search-wrapper input{
+    flex:1;
+    max-width:300px;
+    font-size:1em;
+    padding-left:20px;
+}
+
+#user-options{
+    display:flex;
+    width:200px;
+    justify-content: space-between;
+}
+

@@ -1,0 +1,61 @@
+body{ color: brown;}
+
+h1 h2{
+    color: blueviolet;
+    text-decoration: blue wavy underline;
+}
+
+div{
+    font-size: 20pt;
+}
+
+.info-box{
+    border: 2px solid green;
+    border-radius: 100px;
+}
+
+.info-box p{
+    font-family: serif;
+}
+
+.info-box span{
+    font-weight: bold;
+}
+
+.shadow-text{
+    text-shadow: 5px 9px 5px pink;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+}
+
+a:hover, a:active{
+    text-decoration: underline black;
+}
+a:visited{
+    color: red;
+    background-color: saddlebrown;
+}
+
+main{
+    border: 12px solid blueviolet;
+    display: flex;
+    justify-content: center;
+
+}
+#one{
+    flex:1;
+}
+
+#two{
+    flex:2;
+}
+
+#three{
+    flex:3;
+}
+section{
+    border : 2px solid pink;
+    background-color: aquamarine; 
+}
