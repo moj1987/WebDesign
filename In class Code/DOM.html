@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<HTML>
+    <header>
+        <title>This is a documnet</title>
+        <meta charset="utf-8">
+    </header>
+
+    <body>
+        <div class="dom-events">DOM events</div>
+        <p>Lets play with DOM events</p>
+        <h2>A room</h2>
+        <img src="pic.jpg" id="pic" alt="My Cat" width="200" height=  "200">
+
+        <script src="w5-DOM.js"></script>
+        <script>
+            window.onload= function()
+                {
+                    console.log("Loading done!");
+                };
+            
+                
+
+            window.addEventListener('DOMContentLoaded',function()
+                {
+                    console.log('WIndow DOM Content also working');
+
+                    let  pic = document.querySelector('#pic')
+                    pic.onload = function()
+                    {
+                        console.log('pic img loaded')
+                    };
+
+                    pic.onerror = function()
+                        {
+                            console.log('Oh MY GOD!!!!!!!')
+                        }
+
+                    document.body.onclick= function(){
+                        console.log('Body Clicked')
+                    }
+
+                    pic.onclick= function(e){
+                        console.log('Pic Clicked', e.target )
+                        e.stopPropegation();
+                    }
+
+                    function handlePicClick(e){
+                        console.log('Pic Clicked', e.target )
+                        e.stopPropegation();
+                    }
+                });
+
+            
+        </script>
+    </body>
+</HTML>

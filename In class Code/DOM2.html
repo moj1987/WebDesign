@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This is a document!</title>
+        <meta charset="utf-8">
+
+       
+        
+    </head>
+    <body>
+
+        <div class = "dom-events">DOM Events</div>
+        <p>Let's play with DOM Events</p>
+        <h2>Mouse information</h2>
+        <p>Mouse Position:(<span id="mouse-x">100</span>,<span id="mouse-y"> 300</span>)</p>
+
+
+
+        <h2> A Cat</h2>
+        <img src="pic.jpg" alt="My Cat" width="200" height=  "200" id="cat">
+
+        <script src = "dom2.js"></script>
+        <script>
+            window.onload = function(){
+                console.log('Window load DONE!');
+                    
+            };
+            
+            window.addEventListener('DOMContentLoaded',function(){
+                console.log('WIndow DOM Content also working');
+              
+            let cat = document.querySelector('#cat');
+            cat.onload = function(){
+                console.log('cat Image DONE');
+            } ;
+            cat.onerror =  function(){
+                console.log('cat image has an error');
+            };
+
+            document.body.onclick = function(){
+                console.log('Body Clicked');
+            };
+
+            cat.onclick= function(e){
+                console.log('Cat image clicked',e.target);
+                e.stopPropagation();
+                           }
+
+            let currentCatIndex = 0;
+
+            function nextCatImageUrl(){
+                currentCatIndex++;
+                if(currentCatIndex === cats.length -1){
+                    currentCatIndex = 0;
+                }
+            return cats[currentCatIndex];
+
+            }
+
+            function handleCatClick(e){
+                //console.log('Cat image clicked',nextCatImageUrl());
+                cat.src=nextCatImageUrl();
+                e.stopPropagation();
+            };
+
+            cat.addEventListener('click',handleCatClick);
+             
+           document.body.onmousemove = function(evt){
+               let mouseX = document.querySelector('#mouse-x');
+               let mouseY = document.querySelector('#mouse-y');
+
+               mouseX.innerText = evt.clientX;
+               mouseY.innerText = evt.clientY; 
+           };
+
+            });
+            
+          
+           </script>
+       
+    </body>
+    </html>
+
+
+
+
+
+
+
+        <!-- <img src = "abc.jpg" width="100" height = "100">
+        <h1 id ="anything">Welcome!</h1>
+        <h2 id ="one">I am H2 one</h2>
+        <p>This is a paragraph with a <a href="index.html">link</a> in it.</p>
+        <h2 id="two">I am H2 two</h2>
+        <img src = "abc.jpg"
+          width="100" height = "100">
+        <ul >
+            <li>first item</li>
+            <li>second item</li>
+            <li>third item</li>
+        </ul>
+        <h2 class ="myclass"> I am H2 <i>three</i></h2>
+        <img src = "abc.jpg"  width="100" height = "100">
+        <h2>I am H2 four</h2>
+        <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo optio deleniti nulla molestiae necessitatibus a fugiat velit. Expedita reprehenderit aut, corporis, tenetur optio repellat reiciendis perspiciatis doloremque distinctio dolorum nesciunt.
+    </p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem tempora quia placeat sequi est fugiat praesentium velit ipsam deleniti, minima laborum voluptate voluptatem sed ullam accusamus<p></p> aliquid eaque! Corrupti, porro.</p> -->
+    <!-- </body> -->
+<!-- </html> -->
+
+
+
+
+
+

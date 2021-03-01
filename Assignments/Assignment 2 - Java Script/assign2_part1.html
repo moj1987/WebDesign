@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Script Page</title>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/main.css"/>
+        <script src="scripts/assign2_part1.js"></script>
+    </head>
+
+    <body>
+        <h1>JavaScript Test Page</h1>
+        <p id="para1">Original Text</p>
+        <br>
+        <input type="button" onclick="changePara1()" value="Change 1"/>
+        <input type="button" onclick="changeBackPara1()" value="Change Back"/>
+        <p><strong>Note:</strong>
+            myFunction is stored in an external file called
+            &quot;assign2_part1.js&quot;.
+        </p>
+        <input type="button" onclick="insertCurrentDate()" value="insert current date"/>
+        <p id="datePara">Today's date</p>
+        <p id="loremPara">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Delectus impedit dolor accusamus asperiores, adipisci culpa
+            consequuntur temporibus voluptates laboriosam rem amet saepe
+            rerum aperiam fugit officiis error architecto earum repudiandae.
+        </p>
+        <script>
+            document.getElementById('loremPara').addEventListener('mouseover', changeStyle);
+            document.getElementById('loremPara').addEventListener('mouseout', changeBackStyle);
+        </script>
+    </body>
+</html>

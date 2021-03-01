@@ -1,0 +1,33 @@
+/* the styles for the html element*/
+html{background-color: white;}
+
+/* the styles for the body element*/
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 650px;
+    margin: 0 auto 0 auto;
+    padding: 5px;
+    border: 5px solid #931420;
+    background-color: #fffded;
+}
+
+/* the styles for the sections */
+main {
+	clear: left;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+main p{
+    padding-bottom: .5em;
+}
+
+a:hover{
+    font-style: italic;
+}
+
+a:focus{
+    font-style: italic;
+}
+
