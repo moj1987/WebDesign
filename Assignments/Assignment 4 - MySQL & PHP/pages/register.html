@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/ico" href="../images/favicon.ico" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/formStyle.css" />
+    <title>Conestoga</title>
+  </head>
+  <body>
+    <header>
+      <img src="../images/logo.png" alt="Conestoga logo" />
+      <div>
+        <h1>Conestoga School</h1>
+      </div>
+
+      <nav id="navMenu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li>
+            <a>Students</a>
+            <ul>
+              <li><a href="info.php">Info</a></li>
+              <li><a href="register.html" class="current">Register</a></li>
+            </ul>
+          </li>
+          <li class="lastItem">
+            <a>Class</a>
+            <ul>
+              <li><a href="createClass.html">Create class</a></li>
+              <li><a href="addToClass.php">Add to class</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <aside id="navBar">
+      <ul>
+        <li>
+          <a href="info.php"> Info </a>
+        </li>
+
+        <li>
+          <a href="addToClass.php"> Add to a class </a>
+        </li>
+
+        <li>
+          <a href="register.html" class="current"> Register </a>
+        </li>
+        <li>
+          <a href="CreateClass.html"> Create classes </a>
+        </li>
+      </ul>
+    </aside>
+
+    <main>
+      <h2>Registratin form</h2>
+
+      <form
+        action="../scripts/register.php"
+        method="POST"
+        name="from1"
+        id="form1"
+      >
+        <label for="firstName">First name</label>
+        <input
+          type="text"
+          id="firstName"
+          name="firstName"
+          autofocus
+          autocomplete="given-name"
+          placeholder="first name"
+          maxlength="20"
+          tabindex="1"
+        />
+
+        <label for="lastName">Last name</label>
+        <input type="text" id="lastName" name="lastName" tabindex="2" />
+
+        <label for="fatherName">Father name</label>
+        <input type="text" id="fatherName" name="fatherName" tabindex="3" />
+
+        <label for="phoneNumber">Phone number</label>
+        <input
+          id="position"
+          type="text"
+          name="phoneNumber"
+          tabindex="4"
+          list="positions"
+        />
+        <!--pattern="\.?[1-9]{10}"-->
+
+        <label for="address">Address</label>
+        <textarea
+          name="address"
+          id="address"
+          cols="10"
+          rows="3"
+          tabindex="5"
+          placeholder="Your address"
+        ></textarea>
+
+        <label for="dob">Date of birth</label>
+        <input id="dob" name="dob" type="date" tabindex="6" />
+
+        <div class="buttons">
+          <input type="reset" name="reset" value="Clear" tabindex="7" />
+          <input type="submit" name="Save" value="Save" tabindex="8" />
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <h2>&copy; Mojtaba Abbasszadeh</h2>
+    </footer>
+  </body>
+</html>

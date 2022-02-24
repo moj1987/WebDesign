@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/ico" href="../images/favicon.ico" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/formStyle.css" />
+    <title>Conestoga</title>
+  </head>
+  <body>
+    <header>
+      <img src="../images/logo.png" alt="Conestoga logo" />
+      <div>
+        <h1>Conestoga School</h1>
+      </div>
+
+      <nav id="navMenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a>Students</a>
+            <ul>
+              <li><a href="info.php">Info</a></li>
+              <li>
+                <li><a href="register.html">Register</a></li>
+                
+                
+              </li>
+            </ul>
+          </li>
+          <li class="lastItem"><a >Class</a>
+          <ul>
+                  <li><a href="createClass.html" class="current">Create class</a></li>
+                  <li><a href="addToClass.php">Add to class</a></li>
+                </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <aside id="navBar">
+      <ul>
+        <li>
+          <a href="Info.php"> Info </a>
+        </li>
+
+        <li>
+          <a href="addToClass.php"> Add to a class </a>
+        </li>
+
+        <li>
+          <a href="register.html"> Register </a>
+        </li>
+        <li>
+          <a href="CreateClass.html" class="current"> Create classes </a>
+        </li>
+      </ul>
+    </aside>
+
+    <main>
+      <h2>Registratin form</h2>
+
+      <form action="../scripts/createClass.php" method="POST" name="from1" id="form1">
+      
+      <label for="className">Class name</label>
+      <input
+        type="text"
+        id="className"
+        name="className"
+        autofocus
+        maxlength="20"
+        tabindex="1"
+      />
+
+      <label for="sectionName">Section name</label>
+      <input type="text" id="sectionName" name="sectionName"  tabindex="2" />
+
+      <label for="sectionTeacher">Section Teacher</label>
+      <input type="text" id="sectionTeacher" name="sectionTeacher"  tabindex="3" /> 
+
+      
+      <div class="buttons">
+        <input type="reset" name="reset" value="Clear"  tabindex="4"/>
+        <input type="submit" name="Save" value="Save" tabindex="5"/>
+      </div>
+    </form>
+    </main>
+
+    <footer>
+      <h2>&copy; Mojtaba Abbasszadeh</h2>
+    </footer>
+  </body>
+</html>

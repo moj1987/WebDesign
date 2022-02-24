@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/formStyle.css" type="text/css">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Forms in HTML</h1>
+    
+    <form action="data.php" method="POST" name="from1" id="form1">
+        <!-- for for label should be the id for input ---->
+        <!--TabIndex: using tab to go next-->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="fname"
+         pattern="\.?[a-zA-Z]{3}" autofocus
+          autocomplete="given-name"
+          placeholder="Write!!!!"
+          maxlength="20"
+          tabindex="1">
+
+        <label for="password">Pass-Fucking-Word:</label>
+        <input type="password" id="name" name="fname" required
+        tabindex="2">
+
+        <label for="date">Date</label>
+        <input id="date"
+         name="date"
+        type="date"
+        tabindex="4"
+        >
+
+        <label for="position">Position</label>
+        <input id="position"
+        type="text"
+        tabindex="5"
+        list="positions"
+        >
+        <datalist id="positions">
+            <option value="IT tech"></option>
+            <option value="2IT tech"></option>
+            <option value="3IT tech"></option>
+            <option value="4IT tech"></option>
+        </datalist>
+       
+        <textarea
+        name="research"
+        id="research"
+        cols="20"
+        rows="10"
+        tabindex="6"
+        placeholder="You are dumb"
+        ></textarea>
+
+        <label for="uploadResume">Upload resume</label>
+        <input id="uploadResume" name="uploadResume" 
+        type="file"
+        tabindex="7"
+        accept=".doc, .docx, applicaton/pdf">
+
+        <div class="buttons">
+        <input type="submit" name="submit" value="Send">
+        <input type="reset" name="reset" value="Clear">
+    </div>
+
+    </form>
+    <script src="/scripts/w8-form.js"></script>
+</body>
+</html>

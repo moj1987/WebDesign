@@ -1,0 +1,58 @@
+/* Add to class page styling*/
+form {
+  border: 2px solid green;
+  padding: 10px;
+  max-width: 600px;
+  min-width: 300px;
+  display: grid;
+  grid-template-columns: 120px 450px;
+  grid-gap: 5px;
+}
+input:focus {
+  border: 3px solid red;
+}
+
+input,
+optgroup {
+  color: #131010;
+}
+
+textarea {
+  color: #131010;
+  height: 7em;
+  width: 25em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+fieldset {
+  max-width: 550px;
+  min-width: 400px;
+}
+#submitButton,
+#resetButton {
+  margin: 0.5em;
+  background-color: #416371;
+  width: 100px;
+}
+
+figure:hover {
+  -moz-box-shadow: 0 0 2px #4d7788;
+  -webkit-box-shadow: 0 0 2px #4d7788;
+  box-shadow: 0 0 2px #4d7788;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
